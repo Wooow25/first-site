@@ -6,6 +6,7 @@ body{
    background-color: #FFFFFF;
    font-family: 'Nunito', sans-serif;
    text-align: left;
+   overflow-x: hidden;
   
 }
 
