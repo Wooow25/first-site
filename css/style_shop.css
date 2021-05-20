@@ -1,0 +1,415 @@
+body{
+    position: relative;
+    top: 0;
+    margin: 0;
+    
+   background-color: #FFFFFF;
+   font-family: 'Nunito', sans-serif;
+   text-align: left;
+  
+}
+
+.first-page{
+    position: relative;
+    top: 0;
+    height: max-content;
+    margin: 12px 0 64px 0;
+}
+
+.color{
+    background-color: #FFE4CC;
+    width: 38%;
+    height: 820px;
+    position: absolute;
+    left: 62%;
+    z-index: -1;
+    margin-top: -12px;
+    border-bottom-left-radius: 15px ;
+}
+
+
+header{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center ;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center ;
+    margin-right: 80px;
+}
+
+.logo-pic{
+    width: 61px;
+    height: 61px;
+    margin-right: 12px;
+}
+
+.logo-name{
+    font-family: Playfair Display SC;
+    font-size: 24px;
+    color: #3E3F43;
+    letter-spacing: 0.25em;
+}
+
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-item-a{
+    text-decoration: none;
+    color: #222222;
+}
+.nav-item{
+    margin-right: 48px;
+    cursor: pointer;
+}
+.nav-item-a:hover{
+    color:#8E664A;
+    font-weight: 700;
+}
+
+.user-block{
+    position: relative;
+    display: flex;
+    padding: 11px;
+    background-color: #8E664A;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.user-block-wrapper{
+    position: relative;
+    height: 18px;
+}
+.user-block-pic{
+    position: relative;
+    margin: 0 12px;
+    width: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.user-block-numb{
+    padding: 1px 5px;
+    background-color: #FFE4CC;
+    font-size: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position:absolute;
+    top:-8px;
+    left:20px;
+}
+
+
+/* *********************************************************************** */
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 26px;
+    align-items: center;
+
+}
+
+.title-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0 ;
+    width: 950px;
+}
+
+.title-text{
+    white-space :nowrap;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 26px;
+    color: #3E3F43;
+    margin: 0;
+    width: max-content;
+}
+
+.dash{
+    content: '';
+    display: inline-block;
+    border-top: 2px solid rgba(34, 34, 34, 0.1);
+    width: 100%;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+
+.gray-title{
+    white-space :nowrap;
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 61px;
+    line-height: 83px;
+    text-align: right;
+    color: rgba(34, 34, 34, 0.1);
+    margin: 0;
+}
+
+
+
+.cards{
+    position: relative;
+    max-width:1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.card{
+    padding: 15px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+.card-pic{
+    width: 250px;
+    height: 250px;
+}
+.card-name{
+    font-family: Nunito;
+    font-size: 17px;
+    color: #C4C4C4;
+    width: 250px;
+    height: 23px;
+    white-space: nowrap;
+    overflow-y: hidden;
+
+}
+.card-price{
+    font-family: Nunito;
+    font-size: 17px;
+}
+
+
+
+/* *********************************************************************** */
+
+.cat-wrapper{
+    height: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cat-but{
+    border: 2px solid #3E3F43;
+    color: #3E3F43;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    width:150px;
+    background-color: transparent;
+    padding: 10px 18px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-left: 50%;
+    text-decoration: none;
+}
+
+.subscribe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.sub-text{
+    padding-right: 50px;
+}
+
+.sub-title{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+    color: #000000;
+}
+
+.sub-paragr{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    width: 476px;
+    color: #000000;
+    display: block;
+}
+
+.sub-interactive{
+    position: relative;
+    white-space: nowrap;
+    margin-top: 20px;
+    
+}
+
+.email{
+    padding: 17px 16px 15px 16px;
+    margin: 0;
+    border: 2px solid #3C693B;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    width: 300px;
+    
+}
+
+.sub-but{
+    margin-left: -15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+}
+
+
+.footer{
+    display: flex;
+    justify-content:space-evenly
+
+}
+
+.contact{
+    list-style: none;
+    width: 183px;
+    height: 175px;
+   
+}
+
+
+.footer-title{
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 34px;
+    margin-top: 18px;
+}
+
+.footer-item{
+    text-decoration: none;
+    font-family: Nunito;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8D8D8D;
+    padding-bottom: 16px;
+}
+
+.footer-item-a{
+    text-decoration: none;
+    font-family: Nunito;
+    font-weight: normal;
+    margin-bottom: 16px;
+    color: #8D8D8D;
+}
+
+
+
+.logo-footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center ;
+    margin-right: 80px;
+    margin-bottom: 16px;
+    
+}
+
+.logo-pic-footer{
+    width: 61px;
+    height: 61px;
+    margin-right: 12px;
+}
+
+.logo-name-footer{
+    font-family: Playfair Display SC;
+    font-size: 24px;
+    color: #3E3F43;
+    letter-spacing: 0.25em;
+}
+
+.author{
+    padding-top: 90px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.dash-footer{
+    content: '';
+    display: flex;
+    border: 1px solid #C4C4C4;
+    width: 70%;
+    
+    position: relative;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 7px;
+}
+
+
+
+@media all and (max-width:1100px){
+    .title-text{
+        display: none;
+
+    }
+    .dash{
+        display: none;
+    }
+}
+
+@media all and (max-width:730px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-title{
+        padding-bottom: 14px;
+    }
+    .contact{
+        height: max-content;
+    }
+
+    
+}

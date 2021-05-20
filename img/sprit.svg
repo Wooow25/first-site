@@ -1,0 +1,65 @@
+<svg width="0" height="0" class="hidden">
+
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 416" id="fly">
+    <g filter="url(#filter0_d)">
+      <path d="M8.6 32.261h109.59c43.907 0 79.5 35.594 79.5 79.5v85.829H88.1c-43.907 0-79.5-35.593-79.5-79.5V32.261z" stroke="#894242" stroke-opacity=".2"></path>
+    </g>
+    <g filter="url(#filter1_d)">
+      <path d="M217.699 217.6H327.29c43.907 0 79.5 35.593 79.5 79.5v85.829H297.2c-43.907 0-79.501-35.594-79.501-79.5V217.6z" stroke="#894242" stroke-opacity=".2"></path>
+    </g>
+    <g filter="url(#filter2_d)">
+      <path d="M217.699 88c0-43.907 35.594-79.5 79.5-79.5h85.83v109.59c0 43.907-35.594 79.5-79.5 79.5h-85.83V88z" stroke="#894242" stroke-opacity=".2"></path>
+    </g>
+    <g filter="url(#filter3_d)">
+      <path d="M32.361 297.1c0-43.907 35.594-79.5 79.5-79.5h85.829v109.59c0 43.907-35.593 79.5-79.5 79.5H32.361V297.1z" stroke="#894242" stroke-opacity=".2"></path>
+    </g>
+    <defs>
+      <filter id="filter0_d" x=".1" y="23.761" width="206.09" height="182.329" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset></feOffset>
+        <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <filter id="filter1_d" x="209.199" y="209.1" width="206.09" height="182.329" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset></feOffset>
+        <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <filter id="filter2_d" x="209.199" y="0" width="182.329" height="206.09" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset></feOffset>
+        <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+      <filter id="filter3_d" x="23.861" y="209.1" width="182.329" height="206.09" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+        <feOffset></feOffset>
+        <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+      </filter>
+    </defs>
+  </symbol>
+
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="V1">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6 0C11.217 0 9.955.53 9 1.404A5.318 5.318 0 005.4 0C2.418 0 0 2.468 0 5.514c0 4.444 4.48 8.74 8.62 11.245a.78.78 0 00.762-.001C13.495 14.243 18 9.958 18 5.514 18 2.468 15.582 0 12.6 0zM9.005 14.825C4.555 11.855 1.8 8.385 1.8 5.514c0-2.03 1.612-3.676 3.6-3.676.9 0 1.743.336 2.4.935l.866.792a.502.502 0 00.668 0l.866-.792c.657-.6 1.5-.935 2.4-.935 1.988 0 3.6 1.645 3.6 3.676 0 2.944-2.744 6.34-7.195 9.311z"></path>
+  </symbol>
+
+  <symbol  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="Vector">
+    <path d="M4 4.5h13c.037 0 1 .001 1 1l-1 6c-.089.491-.43 1-.936 1H6l.095 1.299c.07.33.362.701.696.701h8.816c.037 0 .074.005.109.015A1.504 1.504 0 0117 16c0 .827-.673 1.5-1.5 1.5a1.502 1.502 0 01-1.414-2H7.914a1.502 1.502 0 01-1.414 2 1.498 1.498 0 01-.918-2.686 2.102 2.102 0 01-.382-.823l-.391-1.864L2 1.5H.458C.205 1.5 0 1.218 0 .963A.46.46 0 01.458.5h2.104c.21 0 .394.145.444.352L4 4.5z"></path>
+  </symbol>
+
+  
+</svg>

@@ -1,0 +1,288 @@
+body{
+    position: relative;
+    top: 0;
+    margin: 0;
+    
+   background-color: #FFFFFF;
+   font-family: 'Nunito', sans-serif;
+   text-align: left;
+  
+}
+
+.first-page{
+    position: relative;
+    top: 0;
+    height: max-content;
+    margin: 12px 0 64px 0;
+}
+
+.color{
+    background-color: #FFE4CC;
+    width: 38%;
+    height: 820px;
+    position: absolute;
+    left: 62%;
+    z-index: -1;
+    margin-top: -12px;
+    border-bottom-left-radius: 15px ;
+}
+
+
+header{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center ;
+    font-weight: 200;
+    margin-bottom: 100px;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center ;
+    margin-right: 80px;
+}
+
+.logo-pic{
+    width: 61px;
+    height: 61px;
+    margin-right: 12px;
+}
+
+.logo-name{
+    font-family: Playfair Display SC;
+    font-size: 24px;
+    color: #3E3F43;
+    letter-spacing: 0.25em;
+}
+
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nav-item-a{
+    text-decoration: none;
+    color: #222222;
+}
+.nav-item{
+    margin-right: 48px;
+    cursor: pointer;
+}
+.nav-item-a:hover{
+    color:#8E664A;
+    font-weight: 700;
+}
+
+.user-block{
+    position: relative;
+    display: flex;
+    padding: 11px;
+    background-color: #8E664A;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.user-block-wrapper{
+    position: relative;
+    height: 18px;
+}
+.user-block-pic{
+    position: relative;
+    margin: 0 12px;
+    width: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.user-block-numb{
+    padding: 1px 5px;
+    background-color: #FFE4CC;
+    font-size: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position:absolute;
+    top:-8px;
+    left:20px;
+}
+
+
+
+
+
+
+
+.subscribe-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 26px;
+    align-items: center;
+}
+
+.subscribe{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1160px;
+    margin-bottom: 60px;
+}
+
+.sub-title{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+    color: #000000;
+}
+
+.sub-paragr{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    width: 476px;
+    color: #000000;
+    display: block;
+}
+
+.email{
+    padding: 17px 16px 15px 16px;
+    margin: 0;
+    border: 2px solid #3C693B;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    width: 100%;
+}
+
+.sub-interactive{
+    white-space: nowrap;
+    margin-left: 102px;
+    
+}
+
+.button{
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    width:180px;
+    border:none;
+    background-color: #3C693B;
+    padding: 14px 24px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-decoration: none;
+}
+
+.sub-but{
+    margin-left: -15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    list-style: none;
+    width: 183px;
+    height: 175px;
+    padding: 0 50px;
+}
+
+.footer-title{
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 34px;
+    margin-top: 18px;
+}
+
+.footer-item{
+    text-decoration: none;
+    font-family: Nunito;
+    font-weight: normal;
+    font-size: 16px;
+    color: #8D8D8D;
+    padding-bottom: 16px;
+}
+
+.footer-item-a{
+    text-decoration: none;
+    font-family: Nunito;
+    font-weight: normal;
+    margin-bottom: 16px;
+    color: #8D8D8D;
+}
+
+
+
+.logo-footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center ;
+    margin-right: 80px;
+    margin-bottom: 16px;
+    
+}
+
+.logo-pic-footer{
+    width: 61px;
+    height: 61px;
+    margin-right: 12px;
+}
+
+.logo-name-footer{
+    font-family: Playfair Display SC;
+    font-size: 24px;
+    color: #3E3F43;
+    letter-spacing: 0.25em;
+}
+
+.author{
+    padding-top: 90px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.dash-footer{
+    content: '';
+    display: flex;
+    border: 1px solid #C4C4C4;
+    width: 70%;
+    
+    position: relative;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 7px;
+}
