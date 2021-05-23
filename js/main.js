@@ -13,3 +13,7 @@
     });
 }
 }
+// const heightP1 = $('.first-page').height();
+// const heightP = document.querySelector(".first-page").offsetHeight;
+// console.log(heightP1)
+// document.querySelector(".color").setAttribute("style", "height: ${heightP}");
