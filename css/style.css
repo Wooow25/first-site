@@ -19,7 +19,7 @@ body{
 .color{
     background-color: #FFE4CC;
     width: 38%;
-    height: 820px;
+    height: 55vw;
     position: absolute;
     left: 62%;
     z-index: -1;
@@ -126,9 +126,12 @@ header{
 }
 
 .first-block-text{
+/* 
     float: left;
     width: 519px;
-    margin-left: 130px;
+    margin-left: 130px; */
+
+    width: 45vw;
 }
 
 .title{
@@ -170,6 +173,7 @@ header{
 }
 
 .second-page{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,7 +186,9 @@ header{
     justify-content: center;
     align-items: center;
     margin: 0 0 20px 0 ;
-    width: 950px;
+    /* width: 950px; */
+    width: 50vw;
+    max-width: 950px;
 }
 
 .title-text{
@@ -420,7 +426,7 @@ header{
 }
 
 .email{
-    padding: 17px 16px 15px 16px;
+    padding: 16px 16px 15px 16px;
     margin: 0;
     border: 2px solid #3C693B;
     border-radius: 4px;
@@ -547,5 +553,103 @@ header{
         height: max-content;
     }
 
+    .paragr{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .par-pic1 , .par-pic2{
+        max-width: 275px;
+        width: 55%;
+        height: fit-content;
+    }
+
+    .sub-text{
+        padding: 0;
+        text-align: center;
+    }
+
+    .sub-paragr{
+        margin: 0;
+    }
+
+
     
-}
+
+    .cat-item{
+        margin:  20px;
+        padding: 20px 20px;
+        width: 240px;
+        border-top-right-radius: 30% ;
+        border-bottom-left-radius: 30%;
+    }
+
+    .cat{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .cat-wrapper{
+        height: 190px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .cat-pic{
+        height: 100%;
+    }
+
+    .email{
+        padding: 6px 6px 5px 6px;
+        position: relative;
+        top: 2px;
+        width: 150px; 
+    }
+
+    .sub-but {   
+        font-size: 10px;
+        width: 100px;
+        padding: 8px 16px;
+    }
+
+    .color{
+        height: 81vh;
+    }
+
+    .first-block-text{
+        width: 65vw;
+    }
+
+    .first-block{
+        margin-top: 50px;
+    }
+
+    .first-picture{
+        display: none;
+        width: 65vw;
+    }
+
+    .first-block-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .title{
+        font-size: 7vw;
+    }
+    .big-title{
+        font-size: 9vw;
+    }
+    
+    .second-text1 , .second-text2{
+        width: 80%;
+        font-size: 4vw;
+        margin: 5px 0;
+    }
+
+    .gray-title{
+        font-size: 8vw;
+    }
