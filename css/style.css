@@ -144,7 +144,7 @@ header{
     font-family: Nunito;
     font-weight: bold;
     font-size: 72px;
-    line-height: 83px;
+    line-height: 1.2em;
     margin: 0 0 30px 0;
 }
 
@@ -567,15 +567,8 @@ header{
 
     .sub-text{
         padding: 0;
-        text-align: center;
     }
 
-    .sub-paragr{
-        margin: 0;
-    }
-
-
-    
 
     .cat-item{
         margin:  20px;
@@ -650,6 +643,27 @@ header{
         margin: 5px 0;
     }
 
+    .sub-paragr{
+        width: 300px;
+        margin: 0;
+        
+    }
+
     .gray-title{
         font-size: 8vw;
     }
+
+    .subscribe{
+        /* flex-direction: column;
+        justify-content: center;
+        text-align: center; */
+    }
+}
+
+
+@media all and (max-width:557px){
+    .sub-text{
+        padding: 0;
+        text-align: center;
+    }
+}
