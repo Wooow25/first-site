@@ -34,7 +34,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
     justify-content: space-evenly  ;
     font-weight: 200;
 }
@@ -119,31 +118,28 @@ header{
 
 .first-block{
     position: relative;
-    margin-top: 120px;
+    margin-top: 4vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .first-block-text{
-/* 
-    float: left;
-    width: 519px;
-    margin-left: 130px; */
-
-    width: 45vw;
+    width: 44vw;
 }
 
 .title{
     font-family: Nunito;
     font-weight: 600;
-    font-size: 34px;
+    /* font-size: 34px; */
+    font-size: 3vw;
     margin: 0 0 14px 0;
 }
 .big-title{
     font-family: Nunito;
     font-weight: bold;
-    font-size: 72px;
+    /* font-size: 72px; */
+    font-size: 5vw;
     line-height: 1.2em;
     margin: 0 0 30px 0;
 }
@@ -151,9 +147,12 @@ header{
 .first-picture{
     float: right;
 }
+
 .main-pic{
+    width: 35vw;
     max-width: 593px;
 }
+
 .button{
     font-family: Nunito;
     font-weight: bold;
@@ -173,7 +172,7 @@ header{
 }
 
 .second-page{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +184,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 20px 0 ;
+    margin: 20px 0 20px 0 ;
     /* width: 950px; */
     width: 50vw;
     max-width: 950px;
@@ -255,7 +254,7 @@ header{
 }
 
 .third-page{
-    margin:  50px 0 80px 0 ;
+    /* margin:  50px 0 50px 0 ; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,7 +270,7 @@ header{
 
 
 .third-list{
-    margin-top: 20px ;
+    /* margin-top: 20px ; */
     padding: 0;
     list-style: none;
     display: flex;
@@ -343,6 +342,7 @@ header{
     flex-direction: row;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 .cat-name{
     font-family: Nunito;
@@ -435,7 +435,6 @@ header{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     width: 300px;
-    
 }
 
 .sub-but{
@@ -557,12 +556,14 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .par-pic1 , .par-pic2{
         max-width: 275px;
         width: 55%;
         height: auto;
+        margin: 0;
     }
 
     .sub-text{
@@ -609,7 +610,7 @@ header{
     }
 
     .color{
-        height: 81vh;
+        display: none;
     }
 
     .first-block-text{
@@ -617,7 +618,7 @@ header{
     }
 
     .first-block{
-        margin-top: 50px;
+        margin-top: 3vw;
     }
 
     .first-picture{

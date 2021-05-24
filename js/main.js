@@ -13,3 +13,39 @@
     });
 }
 }
+
+//оранжевый блок
+{
+    document.body.addEventListener("click", () =>{
+        const heightP1 = $('.first-page').height();
+        console.log("height click")
+        document.querySelector(".color").style.height = heightP1+80+'px';
+    })
+}
+
+function orange(){
+    const heightP1 = $('.first-page').height();
+    console.log("height function")
+    document.querySelector(".color").style.height = heightP1+80+'px';
+}
+
+orange()
+
+
+// //анимация
+// $(function(){
+//     $(".second-page").click(function(){
+//         $(".paragr1").animate({
+//         marginLeft: '250px'
+//     });
+//   });
+// })
+
+// $(function(){
+//     $(".fourth-page").click(function(){
+//         $(".cat-item").animate({
+//         opacity:  '0'
+//     });
+//   });
+// })
+
