@@ -115,7 +115,7 @@ header{
     justify-content: center;
     font-size: 26px;
     align-items: center;
-
+    position: relative;
 }
 
 .title-block{
@@ -175,6 +175,7 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .show-wrapper-image{
@@ -188,8 +189,9 @@ header{
 .show-close{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 95%;
     font-size: 3vw;
+
 }
 
 .show-image{
