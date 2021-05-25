@@ -100,22 +100,39 @@ for(let i=0; i<inputVal.length; i++){
             parent = addCart[i].closest(".card-but")
             let numb = parseInt(parent.children[0].children[1].value)
             let countCart = parseInt(document.getElementById("added").innerHTML)
-            document.getElementById("added").innerHTML=countCart+numb
+            countCart+=numb
+            document.getElementById("added").innerHTML=countCart
+
+            if(countCart===0){
+                document.getElementById("added").classList.add("none")
+            }else{
+                document.getElementById("added").classList.remove("none")
+            }
         })
     } 
 }
 
+
+// Добавить понравившиеся
 {
     const addLike = document.querySelectorAll(".but-like")
     for (let i=0; i<addLike.length; i++){
         addLike[i].addEventListener('click', ()=>{
             parent = addLike[i].closest(".card-but")
-            const countCart = parseInt(document.getElementById("liked").innerHTML)
+            let countLiked = parseInt(document.getElementById("liked").innerHTML)
             addLike[i].classList.toggle("but-liked")
             if (addLike[i].classList.contains("but-liked")){
-                document.getElementById("liked").innerHTML=countCart+1
+                countLiked+=1
+                document.getElementById("liked").innerHTML=countLiked
             }else{
-                document.getElementById("liked").innerHTML=countCart-1
+                countLiked-=1
+                document.getElementById("liked").innerHTML=countLiked
+            }
+
+            if(countLiked===0){
+                document.getElementById("liked").classList.add("none")
+            }else{
+                document.getElementById("liked").classList.remove("none")
             }
         })
     } 
