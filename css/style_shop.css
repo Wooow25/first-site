@@ -181,6 +181,7 @@ header{
     align-items: center;
     position: relative;
     padding: 15px;
+    margin-bottom: 35px;
 }
 
 .show-wrapper-image{
@@ -451,13 +452,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
 }
 .count{
+    width:150px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px 0px 15px;
 }
-
+.show-buttons{
+    margin-top: 50px;
+}
 .show-but{
     margin-top: 15px;
     background-color: #3C693B;
@@ -466,6 +473,7 @@ header{
 .but-like{
     width: max-content;
     padding: 10px 8px 5px 8px;
+    margin-left: 10px;
 }
 
 .show-block-pic{
@@ -474,6 +482,7 @@ header{
     color: #FFFFFF;
     cursor: pointer;
 }
+
 .card-but{
     width: 250px;
     display: flex;

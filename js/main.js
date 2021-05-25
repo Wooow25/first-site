@@ -35,7 +35,6 @@ eventDel()
 const inputVal = document.querySelectorAll(".card-input")
 for(let i=0; i<inputVal.length; i++){
     inputVal[i].value =1
-    console.log(inputVal[i].value)
     } 
 
 
@@ -69,6 +68,30 @@ for(let i=0; i<inputVal.length; i++){
         })
     }
 }
+
+//кнопки + и -
+{
+    const plus = document.querySelectorAll(".plus")
+    for (let i=0; i<plus.length; i++){
+        plus[i].addEventListener('click', ()=>{
+            parent = plus[i].closest(".count")
+            let numb = parseInt(parent.children[1].value)
+            parent.children[1].value=numb+1
+        })
+    }
+    const minus = document.querySelectorAll(".minus")
+    for (let i=0; i<minus.length; i++){
+        minus[i].addEventListener('click', ()=>{
+            parent = minus[i].closest(".count")
+            let numb = parseInt(parent.children[1].value)
+            if (numb!=0){
+                parent.children[1].value=numb-1
+
+            }
+        })
+    }
+}
+
 
 
 // //анимация
