@@ -92,6 +92,36 @@ for(let i=0; i<inputVal.length; i++){
     }
 }
 
+//добавить в корзину
+{
+    const addCart = document.querySelectorAll(".show-but")
+    for (let i=0; i<addCart.length; i++){
+        addCart[i].addEventListener('click', ()=>{
+            parent = addCart[i].closest(".card-but")
+            let numb = parseInt(parent.children[0].children[1].value)
+            let countCart = parseInt(document.getElementById("added").innerHTML)
+            document.getElementById("added").innerHTML=countCart+numb
+        })
+    } 
+}
+
+{
+    const addLike = document.querySelectorAll(".but-like")
+    for (let i=0; i<addLike.length; i++){
+        addLike[i].addEventListener('click', ()=>{
+            parent = addLike[i].closest(".card-but")
+            const countCart = parseInt(document.getElementById("liked").innerHTML)
+            addLike[i].classList.toggle("but-liked")
+            if (addLike[i].classList.contains("but-liked")){
+                document.getElementById("liked").innerHTML=countCart+1
+            }else{
+                document.getElementById("liked").innerHTML=countCart-1
+            }
+        })
+    } 
+
+
+}
 
 
 // //анимация

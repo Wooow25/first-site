@@ -474,6 +474,12 @@ header{
     width: max-content;
     padding: 10px 8px 5px 8px;
     margin-left: 10px;
+    margin-top: 15px;
+    background-color: #3C693B;
+}
+
+.but-liked{
+    background-color: chocolate;
 }
 
 .show-block-pic{
@@ -500,6 +506,7 @@ header{
     height: 25px;
     text-align: center;
 }
+
 
 @media all and (max-width:1100px){
     .title-text{
