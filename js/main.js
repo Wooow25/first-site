@@ -9,9 +9,9 @@
         document.querySelector(id).scrollIntoView({
             behavior: 'smooth',
             block : 'start',
-        })
-    });
-}
+            })
+        });
+    }
 }
 
 
@@ -30,12 +30,16 @@ function eventDel() {
         del.classList.add("none")  
         })
     }
-eventDel()
 
-const inputVal = document.querySelectorAll(".card-input")
-for(let i=0; i<inputVal.length; i++){
-    inputVal[i].value =1
+
+//Добавление 1 в input
+function putVal() {
+    const inputVal = document.querySelectorAll(".card-input")
+    for(let i=0; i<inputVal.length; i++){
+        inputVal[i].value =1
     } 
+}
+
 
 
 //блок отображающий полную информацию 
@@ -58,18 +62,33 @@ for(let i=0; i<inputVal.length; i++){
         <div class="show-name">${name}</div>
         <div class="show-description">${description}</div>
         <div class="show-price">${price}</div>
-        <button class="button show-but">В корзину</button>
+        <div class="buttons show-buttons card-but">
+            <div class="count">
+                <img class="card-sign  minus" src="img/minus.svg" alt="">
+                <input type="text" class="card-input"> 
+                <img class="card-sign plus" src="img/add.svg" alt="">
+            </div>
+            <button class="button show-but">В корзину</button>
+            <button class="button but-like">
+                <img src="img/V1.svg" alt="" class="show-block-pic">
+            </button>
+        </div>
     </div>
     <div class="show-close" >
         <img src="img/x-mark.svg" alt="" class="img-close">
     </div> 
 	`;
     eventDel();
+    putVal();
+    signFunc();
+    cartFunc();
+    likedFunc();
         })
     }
 }
 
 //кнопки + и -
+function signFunc()
 {
     const plus = document.querySelectorAll(".plus")
     for (let i=0; i<plus.length; i++){
@@ -93,7 +112,8 @@ for(let i=0; i<inputVal.length; i++){
 }
 
 //добавить в корзину
-{
+function cartFunc()
+{ 
     const addCart = document.querySelectorAll(".show-but")
     for (let i=0; i<addCart.length; i++){
         addCart[i].addEventListener('click', ()=>{
@@ -114,6 +134,7 @@ for(let i=0; i<inputVal.length; i++){
 
 
 // Добавить понравившиеся
+function likedFunc()
 {
     const addLike = document.querySelectorAll(".but-like")
     for (let i=0; i<addLike.length; i++){
@@ -140,6 +161,11 @@ for(let i=0; i<inputVal.length; i++){
 
 }
 
+eventDel();
+putVal();
+signFunc();
+cartFunc();
+likedFunc();
 
 // //анимация
 // $(function(){
