@@ -8,6 +8,10 @@ body{
   
 }
 
+.none{
+    display: none !important;
+}
+
 .first-page{
     position: relative;
     top: 0;
@@ -74,7 +78,7 @@ header{
     position: relative;
     display: flex;
     padding: 11px;
-    background-color: #8E664A;
+    background-color: #3C693B;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -95,7 +99,7 @@ header{
 
 .user-block-numb{
     padding: 1px 5px;
-    background-color: #FFE4CC;
+    background-color: #a8fbd4;
     font-size: 10px;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -176,6 +180,7 @@ header{
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 15px;
 }
 
 .show-wrapper-image{
@@ -188,10 +193,15 @@ header{
 
 .show-close{
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 95%;
-    font-size: 3vw;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
 
+.img-close{
+    width: 100%
 }
 
 .show-image{
@@ -351,6 +361,7 @@ header{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     cursor: pointer;
+    padding: 16px 24px;
 }
 
 
@@ -436,7 +447,50 @@ header{
     margin-top: 7px;
 }
 
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.count{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.show-but{
+    margin-top: 15px;
+    background-color: #3C693B;
+}
+
+.but-like{
+    width: max-content;
+    padding: 10px 8px 5px 8px;
+}
+
+.show-block-pic{
+    position: relative;
+    width: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.card-but{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-sign{
+    width: 25px;
+    cursor: pointer;
+}
+
+.card-input{
+    width: 35px;
+    height: 25px;
+    text-align: center;
+}
 
 @media all and (max-width:1100px){
     .title-text{
@@ -449,6 +503,11 @@ header{
 }
 
 @media all and (max-width:730px){
+    .show-close{
+        position: absolute;
+        top: 5px;
+        left: 88%;
+    }
 
     .show-wrapper-image{
         padding: 15px 15px 0px 15px;

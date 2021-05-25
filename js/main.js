@@ -14,22 +14,61 @@
 }
 }
 
-//оранжевый блок
+
+//оранжевый фон
 {
-    document.body.addEventListener("click", () =>{
+    document.querySelector(".first-page").addEventListener("click", () =>{
         const heightP1 = $('.first-page').height();
-        console.log("height click")
         document.querySelector(".color").style.height = heightP1+80+'px';
     })
 }
 
-function orange(){
-    const heightP1 = $('.first-page').height();
-    console.log("height function")
-    document.querySelector(".color").style.height = heightP1+80+'px';
-}
+//скрыть блок
+const del = document.querySelector(".show-block")
+function eventDel() {
+    document.querySelector(".show-close").addEventListener('click',()=>{
+        del.classList.add("none")  
+        })
+    }
+eventDel()
 
-orange()
+const inputVal = document.querySelectorAll(".card-input")
+for(let i=0; i<inputVal.length; i++){
+    inputVal[i].value =1
+    console.log(inputVal[i].value)
+    } 
+
+
+//блок отображающий полную информацию 
+{
+    const cards = document.querySelectorAll(".card")
+    for (let i=0; i< cards.length; i++){
+        cards[i].children[0].addEventListener('click',()=>{
+            del.classList.remove("none")
+            const card = document.querySelector(".show-block");
+        const img = i+1
+        const name = cards[i].children[1].innerHTML
+        const description = cards[i].children[2].innerHTML
+        const price = cards[i].children[3].innerHTML
+
+	card.innerHTML =`
+    <div class="show-wrapper-image">
+        <img src="img/card${img}.png" alt="" class="show-image">
+    </div>
+    <div class="show-info">
+        <div class="show-name">${name}</div>
+        <div class="show-description">${description}</div>
+        <div class="show-price">${price}</div>
+        <button class="button show-but">В корзину</button>
+    </div>
+    <div class="show-close" >
+        <img src="img/x-mark.svg" alt="" class="img-close">
+    </div> 
+	`;
+    eventDel();
+        })
+    }
+}
 
 
 // //анимация
