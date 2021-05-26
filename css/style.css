@@ -31,14 +31,12 @@ body{
 header{
     position: relative;
     top: 0;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly  ;
     font-weight: 200;
 }
-
 
 .logo{
     display: flex;
@@ -100,7 +98,8 @@ header{
     position: relative;
     margin: 0 12px;
     width: 18px;
-    color: #FFFFFF;
+    height: 18px;
+    fill: #FFFFFF;
     cursor: pointer;
 }
 
@@ -143,6 +142,13 @@ header{
     /* font-size: 72px; */
     font-size: 5vw;
     line-height: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.title2{
+    font-family: Nunito;
+    font-weight: 600;
+    font-size: 2vw;
     margin: 0 0 30px 0;
 }
 
@@ -246,7 +252,7 @@ header{
 .par-pic2{
     max-width: 275px;
     width: 24%;
-    height: auto;
+    height: fit-content;
 }
 .paragr{
     display: flex;
@@ -254,6 +260,8 @@ header{
     margin-bottom: 15px;
     max-width: 940px;
 }
+
+
 
 .third-page{
     /* margin:  50px 0 50px 0 ; */
@@ -272,7 +280,6 @@ header{
 
 
 .third-list{
-    /* margin-top: 20px ; */
     padding: 0;
     list-style: none;
     display: flex;
@@ -542,37 +549,7 @@ header{
 }
 
 @media all and (max-width:730px){
-    .footer{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer-title{
-        padding-bottom: 14px;
-    }
-    .contact{
-        height: max-content;
-    }
-
-    .paragr{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .par-pic1 , .par-pic2{
-        max-width: 275px;
-        width: 55%;
-        height: auto;
-        margin: 0;
-    }
-
-    .sub-text{
-        padding: 0;
-    }
-
-
+    
     .cat-item{
         margin:  20px;
         padding: 20px 20px;
@@ -639,6 +616,9 @@ header{
     .big-title{
         font-size: 9vw;
     }
+    .title2{
+        font-size: 6vw;
+    }
     
     .second-text1 , .second-text2{
         width: 80%;
@@ -656,6 +636,35 @@ header{
         font-size: 8vw;
     }
 
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-title{
+        padding-bottom: 14px;
+    }
+    .contact{
+        height: max-content;
+    }
+
+    .paragr{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .par-pic1 , .par-pic2{
+        max-width: 275px;
+        width: 55%;
+        height: auto;
+        margin: 0;
+    }
+
+    .sub-text{
+        padding: 0;
+    }
 }
 
 
