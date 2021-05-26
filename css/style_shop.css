@@ -93,7 +93,8 @@ header{
     position: relative;
     margin: 0 12px;
     width: 18px;
-    color: #FFFFFF;
+    height: 18px; 
+    fill: #FFFFFF;
     cursor: pointer;
 }
 
