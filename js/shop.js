@@ -63,7 +63,7 @@ function cartFunc()
 { 
     const addCart = document.querySelectorAll(".show-but")
     for (let i=0; i<addCart.length; i++){
-        addCart[i].addEventListener('click', ()=>{
+        addCart[i].addEventListener('click', () => {
             parent = addCart[i].closest(".card-but")
             let numb = parseInt(parent.children[0].children[1].value)
             let countCart = parseInt(document.getElementById("added").innerHTML)
@@ -146,8 +146,10 @@ function likedFunc()
     eventDel();
     putVal();
     signFunc();
-    cartFunc();
-    likedFunc();
+
+
+    // cartFunc();
+    // likedFunc();
         })
     }
 }
