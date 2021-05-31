@@ -59,12 +59,10 @@ function signFunc()
 
 
 //добавить в корзину
-function cartFunc()
+function cartFunc(selector)
 { 
-    const addCart = document.querySelectorAll(".show-but")
-    for (let i=0; i<addCart.length; i++){
-        addCart[i].addEventListener('click', () => {
-            parent = addCart[i].closest(".card-but")
+        selector.addEventListener('click', () => {
+            parent = selector.closest(".card-but")
             let numb = parseInt(parent.children[0].children[1].value)
             let countCart = parseInt(document.getElementById("added").innerHTML)
             countCart+=numb
@@ -76,34 +74,34 @@ function cartFunc()
                 document.getElementById("added").classList.remove("none")
             }
         })
-    } 
+    
 }
 
 
-// Добавить понравившиеся
-function likedFunc()
-{
-    const addLike = document.querySelectorAll(".but-like")
-    for (let i=0; i<addLike.length; i++){
-        addLike[i].addEventListener('click', ()=>{
-            parent = addLike[i].closest(".card-but")
-            let countLiked = parseInt(document.getElementById("liked").innerHTML)
-            addLike[i].classList.toggle("but-liked")
-            if (addLike[i].classList.contains("but-liked")){
-                countLiked+=1
-                document.getElementById("liked").innerHTML=countLiked
-            }else{
-                countLiked-=1
-                document.getElementById("liked").innerHTML=countLiked
-            }
 
-            if(countLiked===0){
-                document.getElementById("liked").classList.add("none")
-            }else{
-                document.getElementById("liked").classList.remove("none")
-            }
-        })
-    } 
+// Добавить понравившиеся
+function likedFunc(selector)
+{
+    selector.addEventListener('click', ()=>{
+        parent = selector.closest(".card-but")
+        let countLiked = parseInt(document.getElementById("liked").innerHTML)
+        selector.classList.toggle("but-liked")
+        if (selector.classList.contains("but-liked")){
+            countLiked+=1
+            document.getElementById("liked").innerHTML=countLiked
+        }
+        else{
+            countLiked-=1
+            document.getElementById("liked").innerHTML=countLiked
+        }
+
+        if(countLiked===0){
+            document.getElementById("liked").classList.add("none")
+        }
+        else{
+            document.getElementById("liked").classList.remove("none")
+        }
+    })
 }
 
 
@@ -146,10 +144,10 @@ function likedFunc()
     eventDel();
     putVal();
     signFunc();
-
-
-    // cartFunc();
-    // likedFunc();
+    const addCart = document.querySelector(".show-but")
+    cartFunc(addCart);
+    const addLike = document.querySelector(".but-like")
+    likedFunc(addLike);
         })
     }
 }
@@ -159,6 +157,12 @@ function likedFunc()
 eventDel();
 putVal();
 signFunc();
-cartFunc();
-likedFunc();
+const addCarts = document.querySelectorAll(".show-but")
+    for (let i=0; i<addCarts.length; i++){
+        cartFunc(addCarts[i])
+    }
+const addLikes = document.querySelectorAll(".but-like")
+    for (let i=0; i<addLikes.length; i++){ 
+        likedFunc(addLikes[i]);
+    }
 alert('Внимание! \nСтраница не является официальнной. Ссылки на оригинальный источник указаны в футере страницы, в разделе "Подпишитесь на нас"');
